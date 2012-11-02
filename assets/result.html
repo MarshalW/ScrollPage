@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>新闻</title>
+</head>
+<body>
+<h1 id="result"></h1>
+<script>
+    function loadContent(){
+        var el = document.getElementById('result');
+        el.innerHTML=window.serverData.getResult();
+    }
+    loadContent();
+</script>
+</body>
+</html>
